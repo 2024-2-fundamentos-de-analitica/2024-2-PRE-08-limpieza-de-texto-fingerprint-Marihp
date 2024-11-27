@@ -92,12 +92,12 @@ def main(input_file, output_file):
     df = load_data(input_file)
     df = create_key(df)
     df = generate_cleaned_column(df)
-    df.to_csv("files/output/test.csv", index=False)
+    df.to_csv("files/test.csv", index=False)
     save_data(df, output_file)
 
 
 if __name__ == "__main__":
     main(
         input_file="files/input/input.txt",
-        output_file="files/output/output.txt",
+        output_file="files/output.txt",
     )
